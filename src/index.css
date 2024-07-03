@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.currency-selector {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+.currency-selector select {
+  background-color: #b0e57c; /* Green background */
+  border: 1px solid #b0e57c;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.currency-selector select option {
+  background-color: #b0e57c; /* Green background for options */
+  color: black; /* Black text */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.currency-selector span {
+  display: flex;
+  align-items: center;
+}
+
+.currency-selector span::after {
+  content: attr(data-currency);
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
